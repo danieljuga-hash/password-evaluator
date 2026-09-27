@@ -23,8 +23,8 @@ Most basic password checkers rely on simple regex rules (like checking for one u
 
 ###  Live Demo
 
-You can try the live version of this project here: 
-https://github.com/danieljuga-hash/password-evaluator
+## You can try the live version of this project here: 
+https://danieljuga-hash.github.io/password-evaluator/
 
 ---
 *Built with passion as part of my journey into Cyber Security and Software Development.*

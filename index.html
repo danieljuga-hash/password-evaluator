@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure-First Password Evaluator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Strength Evaluator</h2>
+        <input type="password" id="passwordInput" placeholder="Type your password here...">
+        
+        <div class="meter-container">
+            <div id="strengthMeter" class="meter-bar"></div>
+        </div>
+        
+        <p id="feedbackText"><strong>Status:</strong> Waiting for input...</p>
+        <p id="timeToCrack" class="time-text"></p>
+        <div id="pwnedStatus" class="pwned-status hidden"></div>
+
+        <div class="privacy-label">
+            <h3>🛡️ Privacy & Data Security</h3>
+            <div class="privacy-item">
+                <span class="icon">🔒</span>
+                <div class="text">
+                    <strong>Zero-Knowledge Architecture</strong>
+                    <p>Your password is processed locally and never leaves this device.</p>
+                </div>
+            </div>
+            <div class="privacy-item">
+                <span class="icon">🕵️</span>
+                <div class="text">
+                    <strong>k-Anonymity Protocol</strong>
+                    <p>Only a 5-character cryptographic hash prefix is sent to check for data breaches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
